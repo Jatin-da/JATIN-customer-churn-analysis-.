@@ -1,39 +1,38 @@
-# Customer Churn Prediction & Advanced AI Analytics
+# Enterprise Customer Churn Prediction & Advanced Artificial Intelligence Analytics
 
-## Project description
-This project demonstrates a basic machine-learning workflow for customer churn prediction using Python and Logistic Regression.
+## Project overview
+This project demonstrates customer churn prediction using Python and a Logistic Regression machine-learning model.
 
 ## Dataset
-The notebook generates its own **synthetic demonstration dataset** when run. No external dataset link is required for this generated data. It is not real customer or company data, and model results are for educational demonstration only.
+The script generates 1,200 synthetic customer records for demonstration. It does not use real customer data.
 
-## Technologies used
-- Python
-- NumPy
-- pandas
-- Matplotlib
-- scikit-learn
-- Jupyter Notebook
+## Features used
+- Age
+- Tenure in months
+- Monthly charges
+- Support calls
+- Contract type
+- Internet service
+- Payment method
 
-## Files
-- `Jatin_Customer_Churn_Analysis.ipynb` — complete notebook code and analysis
-- `requirements.txt` — required Python libraries
-- `Jatin_ProjectReport.docx` — project documentation/report
-
-## Setup and run
-1. Install Python 3.10 or newer.
-2. Install dependencies:
-   `python -m pip install -r requirements.txt`
-3. Open the notebook in Jupyter:
-   `jupyter notebook`
-4. Open `Jatin_Customer_Churn_Analysis.ipynb` and run the cells from top to bottom.
-
-## Workflow
-1. Generate synthetic customer records.
-2. Explore the data and churn distribution.
+## Model and workflow
+1. Generate synthetic sample data.
+2. Split the data into training and test sets.
 3. Preprocess numeric and categorical features.
-4. Split the data into training and test sets.
-5. Train a Logistic Regression classifier.
-6. Review accuracy, ROC-AUC where available, classification report, and confusion matrix.
+4. Train a Logistic Regression model.
+5. Print accuracy, ROC-AUC, and a classification report.
+6. Save metrics and a confusion-matrix plot in the `outputs/` folder.
 
-## Limitations and responsible use
-This is an educational project using synthetic data. The results are not validated on real customers and should not be represented as real-world business performance. Real-world use requires authorized data, privacy safeguards, careful validation, bias and data-leakage checks, and ongoing monitoring.
+## Requirements
+Install the libraries listed in `requirements.txt`:
+```bash
+pip install -r requirements.txt
+```
+
+## Run the project
+```bash
+python customer_churn_prediction.py
+```
+
+## Important limitation
+The dataset is synthetic, and results are for educational demonstration only. They should not be presented as real-world customer churn performance.
